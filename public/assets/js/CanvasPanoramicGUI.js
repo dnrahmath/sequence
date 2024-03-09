@@ -116,7 +116,7 @@ const createElementsGUI = (scene, skybox, totalTime, blobUrlArray) => {
         // let imageUrl = "/static/assets/file/panoramic_4096x2048-sequence/" + imageName;
 
         // let imageUrlDefault = "/static/assets/file/panoramic_4096x2048-sequence-default/0001.png";
-        let imageUrlDefault = "../file/panoramic_4096x2048-sequence-default/0001.png";
+        let imageUrlDefault = "/sequence/public/assets/file/panoramic_4096x2048-sequence-default/0001.png";
 
         if (skybox.photoTexture instanceof BABYLON.Texture) {
             skybox.photoTexture.dispose();

@@ -120,7 +120,7 @@ const createPhotoDome = (scene, blobUrlArray) => {
     // var initialImage = pad(1, 4) + ".png";
     
     // let imageUrlDefault = "/static/assets/file/panoramic_4096x2048-sequence-default/0001.png";
-    let imageUrlDefault = "../file/panoramic_4096x2048-sequence-default/0001.png";
+    let imageUrlDefault = "/sequence/public/assets/file/panoramic_4096x2048-sequence-default/0001.png";
     let babylonPhotoDome;
 
     // Create the PhotoDome

@@ -43,7 +43,7 @@ func main() {
 	r.Static("/static", "./public")
 
 	r.GET("/", func(c *gin.Context) {
-		c.File("./public/index.html")
+		c.File("./public/index-dev.html")
 	})
 
 	r.GET("/index-glb", func(c *gin.Context) {

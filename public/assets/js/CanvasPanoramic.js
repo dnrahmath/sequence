@@ -119,12 +119,12 @@ const createPhotoDome = (scene, blobUrlArray) => {
     var size = 1000.0;
     // var initialImage = pad(1, 4) + ".png";
     
-    // let imageUrlDefault = "/static/assets/file/panoramic_4096x2048-sequence-default/0001.png";
+    // let imageUrlDefault = "/public/assets/file/panoramic_4096x2048-sequence-default/0001.png";
     let imageUrlDefault = "/sequence/public/assets/file/panoramic_4096x2048-sequence-default/0001.png";
     let babylonPhotoDome;
 
     // Create the PhotoDome
-    // return new BABYLON.PhotoDome("skyBox", "/static/assets/file/panoramic_4096x2048-sequence/" + initialImage, {
+    // return new BABYLON.PhotoDome("skyBox", "/public/assets/file/panoramic_4096x2048-sequence/" + initialImage, {
     if (blobUrlArray.length > 0) {
         babylonPhotoDome = new BABYLON.PhotoDome("skyBox", blobUrlArray[0], {
             resolution: resolution,

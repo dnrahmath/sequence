@@ -40,15 +40,33 @@ func main() {
 	})
 
 	// Ganti pengaturan file statis
-	r.Static("/static", "./public")
+	r.Static("/public", "./public")
+
+	//=================================================
+
+	r.GET("/login", func(c *gin.Context) {
+		c.File("./login.html")
+	})
+
+	r.GET("/dashboard", func(c *gin.Context) {
+		c.File("./dashboard.html")
+	})
+
+	//=================================================
 
 	r.GET("/", func(c *gin.Context) {
+		c.File("./index.html")
+	})
+
+	r.GET("/dev", func(c *gin.Context) {
 		c.File("./public/index-dev.html")
 	})
 
 	r.GET("/index-glb", func(c *gin.Context) {
 		c.File("./public/index-glb.html")
 	})
+
+	//=================================================
 
 	r.GET("/pick", func(c *gin.Context) {
 		c.File("./public/Pick-Material-Design-Color-Chart.html")
